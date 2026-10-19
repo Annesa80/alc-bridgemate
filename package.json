@@ -1,0 +1,31 @@
+{
+  "name": "bridgemate-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "REST API and demo frontend for the BridgeMate assistance marketplace.",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "create-admin": "node src/create-admin.js",
+    "test": "node --test",
+    "check": "node --check src/server.js && node --check src/db.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.8.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "supertest": "^7.1.0"
+  }
+}
